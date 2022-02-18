@@ -5,7 +5,7 @@ pipeline {
     }
 
     environment {
-        NOTIFY_EVENT_TOKEN    = credentials('notify-token')
+        NOTIFY_EVENT_TOKEN = credentials('notify-token')
     }
 
     agent any
