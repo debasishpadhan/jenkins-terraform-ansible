@@ -4,9 +4,9 @@ pipeline {
         booleanParam(name: 'autoApprove', defaultValue: false, description: 'Automatically run apply after generating plan?')
     }
 
-    environment {
-        NOTIFY_EVENT_TOKEN = credentials('notify-token')
-    }
+//     environment {
+//         NOTIFY_EVENT_TOKEN = credentials('notify-token')
+//     }
 
     agent any
     options {
