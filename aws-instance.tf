@@ -10,7 +10,7 @@ resource "aws_instance" "web" {
   connection {
     type        = "ssh"
     user        = "ubuntu"
-    private_key = file("${path.module}/id_rsa")
+    private_key = file("/var/lib/jenkins/id_rsa_key/id_rsa")
     host        = aws_instance.web.public_ip
   }
   provisioner "remote-exec" {
